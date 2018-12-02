@@ -387,6 +387,9 @@ def task_8(
     # TODO: download the image from img_url with the request module
     # and add your student ID on it with draw_name() in the utils module
     # under src/.
+    
+    result_img = request.urlretrieve(img_url, 'myname')
+    
 
     # You are allowed to change the img_url to your own image URL.
 

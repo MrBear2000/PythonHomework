@@ -387,9 +387,14 @@ def task_8(
     # TODO: download the image from img_url with the request module
     # and add your student ID on it with draw_name() in the utils module
     # under src/.
+    from PIL import Image
+    import sys
+    sys.path.append('~/PythonHomework/src')
+    import utils
     
-    result_img = request.urlretrieve(img_url, 'myname')
-    
+    filename, header = request.urlretrieve(img_url, 'b07902119.png')
+    tmp = Image.open(filename)
+    result_img = utils.draw_text(tmp, 'b07902119')
 
     # You are allowed to change the img_url to your own image URL.
 

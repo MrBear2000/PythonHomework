@@ -140,19 +140,19 @@ def task_3(
     '''
     prime_factors_below_10 = []
     # TODO: fill in the conditions
-    if number<0:
+    if number < 0:
         prime_factors_below_10 = [-1]
     # elif stands for "else if" in Python.
-    elif number==0:
+    elif number == 0:
         prime_factors_below_10 = [0]
     else:
-        if number%2==0:
+        if number % 2 == 0:
             prime_factors_below_10.append(2)
-        if number%3==0: 
+        if number % 3 == 0: 
             prime_factors_below_10.append(3)
-        if number%5==0:
+        if number % 5== 0:
             prime_factors_below_10.append(5)
-        if number%7==0:
+        if number % 7 == 0:
             prime_factors_below_10.append(7)
     # End of TODO
     print(prime_factors_below_10)
@@ -391,11 +391,11 @@ def task_8(
     import sys
     sys.path.append('~/PythonHomework/src')
     import utils
-    
+
     filename, header = request.urlretrieve(img_url, 'b07902119.png')
     tmp = Image.open(filename)
     result_img = utils.draw_text(tmp, 'b07902119')
-    
+
     # You are allowed to change the img_url to your own image URL.
 
     # Display the image:

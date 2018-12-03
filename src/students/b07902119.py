@@ -395,7 +395,7 @@ def task_8(
     filename, header = request.urlretrieve(img_url, 'b07902119.png')
     tmp = Image.open(filename)
     result_img = utils.draw_text(tmp, 'b07902119')
-
+    
     # You are allowed to change the img_url to your own image URL.
 
     # Display the image:
